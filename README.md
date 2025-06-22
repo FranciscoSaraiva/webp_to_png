@@ -1,4 +1,4 @@
-# WEBP to PNG converter
+# WEBP to PNG converter 🌠
 
 This is a simple web application that allows users to convert WEBP images to PNG format. It uses Vite and runs on the browser only, without any server-side processing. Your browser does all the work! 
 
