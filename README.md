@@ -16,3 +16,4 @@ This is a simple web application that allows users to convert WEBP images to PNG
 4. Run `chmod +x .bin/npm` to make the npm script executable.
 5. Start the application using `npm run dev`.
 6. Open your browser and go to `http://localhost:5173`.
+
