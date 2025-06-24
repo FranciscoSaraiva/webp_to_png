@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Check if the operating system is macOS
+if [[ $(uname) == "Darwin" ]]; then
+  # Command for macOS
+  docker run --rm -ti \
+    --volume $(pwd):/app \
+    --workdir /app \
+    node:22.14.0-alpine npm $@
+else
+  # Command for Linux and Windows
+  docker run --rm -ti \
+    --user $(id -u):$(id -g) \
+    --volume $(pwd):/app \
+    --workdir /app \
+    node:22.14.0-alpine npm $@
+fi
